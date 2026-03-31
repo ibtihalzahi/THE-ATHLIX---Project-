@@ -1,2 +1,2 @@
-# THE-ATHLIX-Project-
+# THE-ATHLIX-Project
 Gym Management System 
