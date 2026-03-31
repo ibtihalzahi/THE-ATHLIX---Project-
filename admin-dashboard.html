@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<header>
+<nav class="navbar">
+<!-- Logo -->
+<div class="logo">
+<a href="index.html"><img src="Logo-png.png" alt="The Athlix Logo"></a>
+</div>
+<!-- Navigation menu -->
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="admin-login.html">Login</a></li>
+<li><a href="admin-dashboard.html">Dashboard</a></li>
+<li><a href="admin-plans.html">Plans</a></li>
+</ul>
+</nav>
+</header>
+<body>
+
+<section class="admin-dashboard">
+
+<div class="admin-header">
+<h1>Admin Dashboard</h1>
+<p>Welcome back, Administrator. Here's your gym overview.</p>
+</div>
+
+<div class="dashboard-container">
+
+<!-- Main Content -->
+<main class="main-content">
+
+<div class="quick-actions">
+<h3>Quick Actions</h3>
+<div class="action-buttons">
+<a href="admin-plans.html" class="action-btn"><i class="fas fa-plus"></i> Add New Plan</a>
+<a href="#" class="action-btn"><i class="fas fa-user-plus"></i> Add Member</a>
+<a href="#" class="action-btn"><i class="fas fa-calendar-plus"></i> Schedule Class</a>
+</div>
+</div>
+
+<div class="stats-cards">
+<div class="stat-card">
+<div class="stat-icon">
+<i class="fas fa-users"></i>
+</div>
+<div class="stat-content">
+<h3>Total Members</h3>
+<p>500</p>
+</div>
+</div>
+<div class="stat-card">
+<div class="stat-icon">
+<i class="fas fa-check-circle"></i>
+</div>
+<div class="stat-content">
+<h3>Active Subscriptions</h3>
+<p>320</p>
+</div>
+</div>
+<div class="stat-card">
+<div class="stat-icon">
+<i class="fas fa-calendar-day"></i>
+</div>
+<div class="stat-content">
+<h3>Classes Today</h3>
+<p>10</p>
+</div>
+</div>
+<div class="stat-card">
+<div class="stat-icon">
+<i class="fas fa-dollar-sign"></i>
+</div>
+<div class="stat-content">
+<h3>Revenue This Month</h3>
+<p>864000 DA</p>
+</div>
+</div>
+<div class="stat-card">
+<div class="stat-icon">
+<i class="fas fa-user-plus"></i>
+</div>
+<div class="stat-content">
+<h3>New Members This Week</h3>
+<p>12</p>
+</div>
+</div>
+<div class="stat-card">
+<div class="stat-icon">
+<i class="fas fa-check-double"></i>
+</div>
+<div class="stat-content">
+<h3>Classes Completed Today</h3>
+<p>8</p>
+</div>
+</div>
+<div class="stat-card">
+<div class="stat-icon">
+<i class="fas fa-clock"></i>
+</div>
+<div class="stat-content">
+<h3>Pending Payments</h3>
+<p>5</p>
+</div>
+</div>
+</div>
+
+<<h2>Plan Popularity</h2>
+<div class="plan-chart">
+  <div class="circle" style="background: conic-gradient(#ff4f8b 0% 50%, #992e52 50% 80%, #ffc107 80% 100%);">
+    <span class="center-label">Silver</span>
+  </div>
+  <ul class="plan-legend">
+    <li><span class="legend-color bronze"></span> Bronze 50%</li>
+    <li><span class="legend-color silver"></span> Silver 30%</li>
+    <li><span class="legend-color gold"></span> Gold 20%</li>
+  </ul>
+</div>
+
+
+
+<h2>Recent Registrations</h2>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th><i class="fas fa-user"></i> Name</th>
+<th><i class="fas fa-calendar"></i> Date</th>
+<th><i class="fas fa-tag"></i> Plan</th>
+<th><i class="fas fa-cogs"></i> Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Olivia Wilson</td>
+<td>15 May 2025</td>
+<td>Silver</td>
+<td>
+<button class="action-btn-small"><i class="fas fa-eye"></i></button>
+<button class="action-btn-small"><i class="fas fa-edit"></i></button>
+</td>
+</tr>
+<tr>
+<td>Liam Jones</td>
+<td>14 May 2025</td>
+<td>Bronze</td>
+<td>
+<button class="action-btn-small"><i class="fas fa-eye"></i></button>
+<button class="action-btn-small"><i class="fas fa-edit"></i></button>
+</td>
+</tr>
+<tr>
+<td>Noah Brown</td>
+<td>13 May 2025</td>
+<td>Gold</td>
+<td>
+<button class="action-btn-small"><i class="fas fa-eye"></i></button>
+<button class="action-btn-small"><i class="fas fa-edit"></i></button>
+</td>
+</tr>
+<tr>
+<td>William Taylor</td>
+<td>12 May 2025</td>
+<td>Bronze</td>
+<td>
+<button class="action-btn-small"><i class="fas fa-eye"></i></button>
+<button class="action-btn-small"><i class="fas fa-edit"></i></button>
+</td>
+</tr>
+<tr>
+<td>Emma Davis</td>
+<td>11 May 2025</td>
+<td>Pilates</td>
+<td>
+<button class="action-btn-small"><i class="fas fa-eye"></i></button>
+<button class="action-btn-small"><i class="fas fa-edit"></i></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</main>
+
+</div>
+
+</section>
+
+<footer>
+<p>Contact us:</p>
+<ul>
+<li>Email: info@athlix.com</li>
+<li>Phone: +213 30 33 18 80</li>
+</ul>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="classes.html">Classes</a></li>
+<li><a href="membership.html">Membership</a></li>
+<li><a href="trainers.html">Trainers</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<p>Opening hours: 5:00 AM – 00:00 AM</p>
+<p>Address: 123 Fitness Street, Health City</p>
+<p>The Athlix © 2026</p>
+</footer>
+
+</body>
+</html>
