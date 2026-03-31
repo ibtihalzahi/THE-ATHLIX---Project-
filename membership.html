@@ -1,0 +1,247 @@
+<!doctype html>
+<header>
+
+<nav class="navbar">
+
+<!-- Logo -->
+<div class="logo">
+<a href="index.html"><img src="Logo-png.png" alt="The Athlix Logo"></a>
+</div>
+
+
+<! Navigation menu >
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="classes.html">Classes</a></li>
+<li><a href="membership.html">Membership</a></li>
+<li><a href="trainers.html">Trainers</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Athlix Membership</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero-membership">
+      <h1><span class="athlix-highlight">The Athlix Gym</span></h1>
+      <p>
+        Join our community and unlock your fitness journey with the best plans
+        and facilities.
+      </p>
+    </div>
+
+    <section class="membership-plans">
+      <h2>Membership Plans</h2>
+      <div class="plan-cards">
+        <div class="plan-card bronze">
+          <h3>🥉 Bronze Plan</h3>
+          <div class="plan-price">3000 DA / month</div>
+          <ul>
+            <li>Gym access</li>
+            <li>Cardio zone</li>
+            <li>Weight training</li>
+          </ul>
+          <button class="btn">Choose Bronze</button>
+        </div>
+        <div class="plan-card silver">
+          <h3>🥈 Silver Plan</h3>
+          <div class="plan-price">10000 DA / 3 months</div>
+          <ul>
+            <li>Gym access</li>
+            <li>1 class included</li>
+            <li>Pool access</li>
+            <li>Locker access</li>
+          </ul>
+          <button class="btn">Choose Silver</button>
+        </div>
+        <div class="plan-card gold">
+          <h3>🥇 Gold Plan</h3>
+          <div class="plan-price">36000 DA / year</div>
+          <ul>
+            <li>Full gym access</li>
+            <li>All classes</li>
+            <li>Swimming pool</li>
+            <li>Nutrition guidance</li>
+            <li>Priority booking</li>
+          </ul>
+          <button class="btn">Choose Gold</button>
+        </div>
+      </div>
+    </section>
+    <section class="registration">
+      <h2>Membership Registration</h2>
+      <div class="registration-form-card">
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" class="reg-label">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="reg-input"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" class="reg-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="reg-input"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone" class="reg-label">Phone</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="reg-input"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="dob" class="reg-label">Date of Birth</label>
+              <input
+                type="date"
+                id="dob"
+                name="dob"
+                class="reg-input"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="reg-label">Select Membership Plan</label>
+            <div class="checkbox-container">
+              <input
+                type="radio"
+                id="bronze"
+                name="plan"
+                value="bronze"
+                required
+              />
+              <label for="bronze" class="reg-radio-label">Bronze</label>
+              <input type="radio" id="silver" name="plan" value="silver" />
+              <label for="silver" class="reg-radio-label">Silver</label>
+              <input type="radio" id="gold" name="plan" value="gold" />
+              <label for="gold" class="reg-radio-label">Gold</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="reg-label">Gym Rules</label>
+            <a
+              href="#"
+              class="toggle-rules-link"
+              onclick="
+                toggleRules();
+                return false;
+              "
+              id="toggleRulesLink"
+              >Show Gym Rules</a
+            >
+            <ul
+              id="gym-rules-list"
+              class="gym-rules-list"
+              style="display: none"
+            >
+              <li>Wear appropriate sports clothing</li>
+              <li>Clean equipment after use</li>
+              <li>Respect trainers and other members</li>
+              <li>No outside food in training area</li>
+              <li>Follow safety instructions</li>
+            </ul>
+            <div class="checkbox-container">
+              <input type="checkbox" id="rules" required />
+              <label for="rules">I agree to the gym rules</label>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="btn" type="submit">Register</button>
+          </div>
+        </form>
+        </div>
+      </section>
+      <section class="payment-methods">
+        <h2>Payment Methods</h2>
+        <div class="payment-icons">
+           
+ <figure class="payment-figure">
+            <img src="cash.jpg" alt="Cash" />
+            
+          </figure>
+  <figure class="payment-figure">
+            <img src="goldencard.jpg" alt="GoldenCard" />
+            
+          </figure>
+ <figure class="payment-figure">
+            <img src="visacard.jpg" alt="VisaCard" />
+            <
+          </figure>
+ <figure class="payment-figure">
+            <img src="mastercard.jpg" alt="MasterCard" />
+            
+          </figure>
+        </div>
+       
+      </section>
+      
+    </section>
+    
+    <script>
+      
+      function toggleRules() {
+        const rulesList = document.getElementById("gym-rules-list");
+        const link = document.getElementById("toggleRulesLink");
+        if (rulesList.style.display === "none") {
+          rulesList.style.display = "block";
+          link.textContent = "Hide Gym Rules";
+        } else {
+          rulesList.style.display = "none";
+          link.textContent = "Show Gym Rules";
+        }
+      }
+    </script>
+    <footer>
+
+<p>Contact us:</p>
+<ul>
+    <li>Email: info@athlix.com</li>
+    <li>Phone: +213 30 33 18 80</li>
+</ul>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="classes.html">Classes</a></li>
+<li><a href="membership.html">Membership</a></li>
+<li><a href="trainers.html">Trainers</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+<p>Opening hours: 5:00 AM – 00:00 AM</p>
+
+<p>Address: 123 Fitness Street, Health City</p>
+
+<p><a href="admin-login.html">The Athlix © 2026</a></p>
+
+</footer> 
+    
+    
+  </body>
+</html>
