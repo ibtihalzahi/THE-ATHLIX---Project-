@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Manage Plans</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<header>
+<nav class="navbar">
+<!-- Logo -->
+<div class="logo">
+<a href="index.html"><img src="Logo-png.png" alt="The Athlix Logo"></a>
+</div>
+<!-- Navigation menu -->
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="admin-login.html">Login</a></li>
+<li><a href="admin-dashboard.html">Dashboard</a></li>
+<li><a href="admin-plans.html">Plans</a></li>
+</ul>
+</nav>
+</header>
+<body>
+
+<section class="admin-section">
+
+<h1>Membership Plans</h1>
+
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Plan Name</th>
+<th>Price</th>
+<th>Duration</th>
+<th>Features</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bronze</td>
+<td>3000 DA</td>
+<td>1 Month</td>
+<td>Gym Access | Cardio | Weight Training</td>
+<td>
+<button type="button" class="edit-btn">Edit</button>
+<button type="button" class="delete-btn">Delete</button>
+</td>
+</tr>
+<td>Silver</td>
+<td>10000 DA</td>
+<td>3 Months</td>
+<td>Gym | 1 Class | Pool | Locker</td>
+<td>
+<button type="button" class="edit-btn">Edit</button>
+<button type="button" class="delete-btn">Delete</button>
+
+</td>
+</tr>
+<td>Gold</td>
+<td>36000 DA</td>
+<td>1 Year</td>
+<td>Full Access | All Classes | Nutrition Guidance</td>
+<td>
+<button type="button" class="edit-btn">Edit</button>
+<button type="button" class="delete-btn">Delete</button>
+</td>
+</tr>
+
+<tr>
+<td>Swimming</td>
+<td>3500 DA</td>
+<td>1 Month</td>
+<td>Pool Access | Swimming Classes</td>
+<td>
+<button type="button" class="edit-btn">Edit</button>
+<button type="button" class="delete-btn">Delete</button>
+</td>
+</tr>
+<tr>
+<td>Boxing</td>
+<td>2500 DA</td>
+<td>1 Month</td>
+<td>Boxing Training | Sparring Sessions</td>
+<td>
+<button type="button" class="edit-btn">Edit</button>
+<button type="button" class="delete-btn">Delete</button>
+</td>
+</tr>
+<tr>
+<td>Pilates</td>
+<td>80000 DA</td>
+<td>1 Month</td>
+<td>Pilates Classes | Flexibility Training</td>
+<td>
+<button type="button" class="edit-btn">Edit</button>
+<button type="button" class="delete-btn">Delete</button>
+</td>
+</tr>
+<tr>
+
+</tr>
+<tr>
+
+</tbody>
+</table>
+</div>
+
+<h2>Add New Plan</h2>
+
+<div class="add-plan-form">
+<form>
+<label for="plan-name">Plan Name</label>
+<input type="text" id="plan-name" name="plan-name" placeholder="Plan Name" required>
+
+<label for="plan-price">Price (DA)</label>
+<input type="number" id="plan-price" name="plan-price" placeholder="Price" required>
+
+<label for="plan-duration">Duration</label>
+<input type="text" id="plan-duration" name="plan-duration" placeholder="Duration" required>
+
+<label for="plan-description">Description</label>
+<textarea id="plan-description" name="plan-description" placeholder="Description" required></textarea>
+
+<button type="submit" class="submit-btn">Submit</button>
+</form>
+</div>
+
+</section>
+
+<footer>
+<p>Contact us:</p>
+<ul>
+<li>Email: info@athlix.com</li>
+<li>Phone: +213 30 33 18 80</li>
+</ul>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="classes.html">Classes</a></li>
+<li><a href="membership.html">Membership</a></li>
+<li><a href="trainers.html">Trainers</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<p>Opening hours: 5:00 AM – 00:00 AM</p>
+<p>Address: 123 Fitness Street, Health City</p>
+<p>The Athlix © 2026</p>
+</footer>
+
+</body>
+</html>
